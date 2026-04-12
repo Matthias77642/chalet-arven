@@ -240,7 +240,6 @@
       min-height: 420px;
       background:
         linear-gradient(180deg, rgba(12,35,48,0.08), rgba(12,35,48,0.35)),
-        radial-gradient(circle at 25% 20%, rgba(255,255,255,0.55), transparent 25%),
         linear-gradient(160deg, #adcce0 0%, #6f94ac 28%, #4f6f83 50%, #71846f 68%, #d9c4a0 100%);
       position: relative;
       overflow: hidden;
@@ -258,17 +257,7 @@
       background: linear-gradient(180deg, transparent, rgba(19,36,39,0.12));
     }
 
-    .mountains {
-      position: absolute;
-      inset: auto -5% 18% -5%;
-      height: 42%;
-      background:
-        polygon(0 100%, 8% 74%, 18% 88%, 28% 48%, 38% 76%, 50% 42%, 60% 76%, 71% 36%, 82% 71%, 92% 52%, 100% 100%);
-      clip-path: polygon(0 100%, 8% 74%, 18% 88%, 28% 48%, 38% 76%, 50% 42%, 60% 76%, 71% 36%, 82% 71%, 92% 52%, 100% 100%);
-      background-color: rgba(255,255,255,0.9);
-      filter: drop-shadow(0 10px 18px rgba(255,255,255,0.18));
-      opacity: 0.95;
-    }
+    
 
     .visual-copy {
       position: relative;
@@ -595,11 +584,10 @@
       </div>
 
       <div class="hero-card">
-        <div class="visual" aria-hidden="true">
-          <div class="mountains"></div>
+        <div class="visual" aria-hidden="true" style="background-image: linear-gradient(180deg, rgba(12,35,48,0.08), rgba(12,35,48,0.35)), url('https://raw.githubusercontent.com/Matthias77642/chalet-arven/main/IMG_20210119_151832.jpg'); background-size: cover; background-position: center;">
           <div class="visual-copy">
             <h2>Sun terrace views across the Alps</h2>
-            <p>Inspired by the Jungfrau, Silberhorn, and Wengen’s classic chalet setting.</p>
+            <p>Beautiful mountain scenery from Chalet Arven in Wengen.</p>
           </div>
         </div>
         <div class="feature-grid">
@@ -617,7 +605,7 @@
           </div>
           <div class="feature-card">
             <strong>Thoughtful extras</strong>
-            <span>Shared laundry, storage, and ski depot near the cable car.</span>
+            <span>Shared laundry, storage, and ski room.</span>
           </div>
         </div>
       </div>
@@ -790,13 +778,12 @@
           </div>
 
           <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/Matthias77642/chalet-arven/main/IMG_20230819_123313.jpg" alt="View of Chalet Arven in Wengen" style="display:block; width:100%; height:auto; max-height:240px; object-fit:cover; border-radius:24px; margin-top:16px;" />
+          <img src="https://raw.githubusercontent.com/Matthias77642/chalet-arven/main/20260214_144654.jpg" alt="Additional view of Chalet Arven in Wengen" style="display:block; width:100%; height:auto; max-height:240px; object-fit:cover; border-radius:24px; margin-top:16px;" />
             <div>
               <h3>Plan your mountain stay at Chalet Arven</h3>
               <p>
                 Whether you are coming for winter skiing, summer hiking, or a quiet alpine escape, Chalet Arven offers a rare combination of character, comfort, and location in the heart of Wengen.
-              </p>
-              <p>
-                Use the official rental listing or your preferred managing agency to check dates, rates, and booking arrangements.
               </p>
             </div>
             <a class="button" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top</a>
